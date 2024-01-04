@@ -160,12 +160,6 @@ const Dashboard: React.FC = () => {
         label: "نویسنده",
       },
       {
-        id: "status",
-        numeric: false,
-        disablePadding: true,
-        label: "وضعیت",
-      },
-      {
         id: "visible",
         numeric: false,
         disablePadding: true,

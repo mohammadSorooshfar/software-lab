@@ -93,13 +93,7 @@ const TrProduct: React.FC<{
         <TableCell align="center">{rowData.price}</TableCell>
         <TableCell align="center">{rowData.isbn}</TableCell>
         <TableCell align="center">{rowData.publisher}</TableCell>
-        <TableCell align="center">
-          {rowData.status == 1
-            ? "در انتظار تایید"
-            : rowData.status == 2
-            ? "تایید شده"
-            : "رد شده"}
-        </TableCell>
+
         <TableCell align="center">
           <Button
             variant="contained"
