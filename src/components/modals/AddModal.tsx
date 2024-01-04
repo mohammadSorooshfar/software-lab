@@ -56,9 +56,9 @@ const AddModal: React.FC<props> = ({
           values.description
         )
         .then((res) => {
+          toast.success("آگهی با موفقیت ثبت شد");
           handleClose();
           refresh();
-          toast.success("آگهی با موفقیت ثبت شد");
         })
         .catch((e) => {
           toast.error(e);
