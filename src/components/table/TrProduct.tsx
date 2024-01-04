@@ -25,18 +25,7 @@ const TrProduct: React.FC<{
   const goToProductPage = (id: number) => {
     router.push("/product/" + id);
   };
-  const handleSubmit = () => {
-    // deleteProductsAdminService(rowData.id.toString())
-    //   .then((res) => {
-    //     setOpenDelete(false);
-    //     toast.success("آگهی با موفقیت حذف شد");
-    //     refreshFunction();
-    //   })
-    //   .catch((e) => {
-    //     setOpenDelete(false);
-    //     toast.error("حذف آگهی با خطا روبرو شد");
-    //   });
-  };
+  const handleSubmit = () => {};
   const handleEdit = (
     data: {
       name: string;
@@ -100,7 +89,7 @@ const TrProduct: React.FC<{
   return (
     <>
       <TableRow hover role="checkbox" tabIndex={-1} key={rowData.name}>
-        <TableCell align="center">{rowData.book_title}</TableCell>
+        <TableCell align="center">{rowData.name}</TableCell>
         <TableCell align="center">{rowData.price}</TableCell>
         <TableCell align="center">{rowData.isbn}</TableCell>
         <TableCell align="center">{rowData.publisher}</TableCell>
